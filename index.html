@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushi Dasvante | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="prof.jpeg" alt="Rushi Dasvante" class="profile-img" >
+        <h1>Rushi Dasvante</h1>
+        <p>I am a TYBSc Computer Science student with a passion for coding. My skills include web development, Python, c and MS-Office
+            i can work on github,i worked on different types of projects 
+        </p>
+    </section>
+
+    <section id="project">
+        <h2 align="center"> My Project</h2>
+        <div class="project-grid">
+            <!-- Repeat for each project -->
+            <div class="project-item">
+                <img src="project1.jpg" align="center"Project 1">
+                
+                <img src="project2.jpg"align="center" alt="Project 1" >
+                <img src="project3.jpg"align="center" alt="Project 1" >
+                <h3 align="center" >Handwave Audio Controller</h3>
+                <p>
+                    The HandWave Audio Controller is a Python-based application that leverages computer vision to allow users to control the audio volume of their system using hand gestures. By using a webcam, the application detects specific hand gestures in real-time and translates them into commands to adjust the system's audio volume. This project utilizes Mediapipe for hand tracking and Pycaw (Python Core Audio Windows Library) to control the audio volume on Windows systems.
+                    
+                    <br>
+                    Use Cases:
+                    <br>
+                    1.Accessibility:
+                    <br>
+                    This application can be highly useful for individuals with mobility impairments who might find traditional input devices like keyboards or mice challenging to use.
+                    
+                    
+                    <br>
+                    2.Contactless Control:
+                    <br>
+                    In environments where hygiene is a concern (e.g., in medical settings or public kiosks), this contactless method of controlling audio can be advantageous.
+                    <br>
+                    3.Entertainment Systems:
+                    <br>
+                    The project can be integrated into home entertainment systems, allowing users to control the volume of their media playback without needing a remote or physical interaction.
+                    <br>
+                    4.Smart Home Integration:
+                    <br>
+                    The gesture-based control could be expanded to manage other smart home devices, providing a seamless and intuitive user experience.
+                    <br>
+                    5.Public Spaces:
+                    <br>
+                    In public spaces like museums, galleries, or exhibitions, where interactive displays might require audio control, this technology could be employed to allow users to adjust the volume in a contactless and intuitive manner</p>
+                <a href="https://github.com/RushiDasvante/HandWave_Audio_Controller.git">View Project on Github</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Currently studying TYBSc Computer Science at Modern  College.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            <li>Web Development</li>
+            <li>C </li>
+            <li>Basic Java</li>
+            <li>Git/Github</li>
+            <li>MS-Office (Exel,Word,Powerpoint,MS-access)</li>
+            <!-- Add more skills -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
