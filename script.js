@@ -2,13 +2,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     event.preventDefault(); // Prevent the default form submission
     
     // Get form values
-    const name = document.getElementById('name').value;
+    const from_name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
     // Prepare the email template parameters
     const templateParams = {
-        name: name,
+        name: from_name,
         email: email,
         message: message
     };
