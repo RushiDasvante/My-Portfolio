@@ -1,21 +1,24 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
     
+    // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
-    // Simulating message save in local storage
-    const contactInfo = { name, email, message };
-    localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
+    // Prepare the email template parameters
+    const templateParams = {
+        name: name,
+        email: email,
+        message: message
+    };
     
-    document.getElementById('formMessage').innerText = "Your message has been saved!";
-    
-    // Reset form
-    this.reset();
+    // Send the form data via EmailJS
+    emailjs.send('service_dhblyc7', 'template_9bd0cec', templateParams)
+    .then(function(response) {
+        document.getElementById('form-status').innerHTML = 'Message sent successfully!';
+        document.getElementById('contactForm').reset(); // Reset the form
+    }, function(error) {
+        document.getElementById('form-status').innerHTML = 'Failed to send message. Please try again.';
+    });
 });
-
-
-
-
-

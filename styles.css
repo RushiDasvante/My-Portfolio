@@ -1,16 +1,8 @@
 /* Basic styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: antiquewhite;
-    background-image: url('Background.jpg');
-    color: #16e024;
-}
 
 header {
-    background-color: #0ed63c66;
-    color: #130505;
+    background-color: #18f44b3e;
+    color: #ffffff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -25,7 +17,7 @@ nav ul {
 
 
 header nav ul li a {
-    color: #fff;
+    color: #fefefe;
     text-decoration: none;
 }
 
@@ -40,11 +32,20 @@ section {
     gap: 20px;
 }
 
-.project-item img {
-    
-    width: 30%;
-    border-radius: 10px;
-    align-items: center;
+/* Project images container */
+.project-container {
+    display: flex;
+    justify-content: center; /* Aligns the images horizontally in the center */
+    gap: 20px; /* Adds spacing between images */
+    margin: 20px 0;
+}
+
+/* Style for project images */
+.project-image {
+    width: 20%; /* Sets the width of each image to 30% */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
 }
 
 button {
@@ -61,15 +62,9 @@ button:hover {
 }
 
 /* Moveable Buttons/Effects */
-button {
-    animation: float 2s infinite ease-in-out;
-}
 
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
+
+
 #about {
     text-align: center;
     padding: 2rem;
@@ -79,7 +74,28 @@ button {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#projects, #education,#skills, #contact {
+
+
+.aducation-list{
+    list-style: none;
+}
+
+/* Center the unordered list */
+.skills-list {
+    list-style: none;
+    
+    padding-left: 0;             /* Removes default padding */
+    margin: 0;                   /* Resets default margin */
+}
+
+/* Styling for list items */
+
+
+#project,#education,#skills, #contact {
+   
+    justify-content: center; 
+    align-items: center;
+    text-align: left;  
     text-align: center;
     padding: 2rem;
     margin: 1rem auto;
@@ -112,3 +128,75 @@ button {
     line-height: 1.5;
     margin-top: 10px;
 }
+/* Style for background video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* This ensures the video stays behind your content */
+    object-fit: cover;
+  }
+  
+  /* Ensure your content stays visible */
+  header, section, nav {
+    position: relative;
+    z-index: 1; /* This ensures the content stays on top of the video */
+  }
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #20eb7513;
+    color: rgb(2, 1, 1);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    z-index: 1; /* Ensures it stays on top of background video */
+}
+
+/* Ensure it doesn't overlap content */
+body {
+    color: rgb(4, 240, 40);
+
+    padding-bottom: 50px; /* Adjust if needed, ensures footer doesn't cover content */
+}
+/* Project link styling */
+.project-link {
+    display: flex;
+    justify-content: center; /* Centers the link horizontally */
+    align-items: center;     /* Centers the link vertically */
+
+}
+
+/* Link styling */
+.project-link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Change this to your desired color */
+    background-color: #20e03050;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+.other-account {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+
+}
+
+/* Link styling */
+.other-account a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Change this to your desired color */
+    background-color: #20e03050;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+

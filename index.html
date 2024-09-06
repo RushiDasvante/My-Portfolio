@@ -1,81 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushi Dasvante | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "gwTB8CGo2X0urVP_4",
+            });
+        })();
+    </script>
+
 </head>
-<body >
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <header>
-        <nav>
+        <nav> 
             <ul>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <img src="prof.jpeg" alt="Rushi Dasvante" class="profile-img" >
-        <h1>Rushi Dasvante</h1>
-        <p>I am a TYBSc Computer Science student with a passion for coding. My skills include web development, Python, c and MS-Office
-            i can work on github,i worked on different types of projects 
+        <h1>About Myself</h1>
+        <img src="prof.jpeg" alt="Rushi Dasvante" class="profile-img">
+        <h1 style="background-color:rgb(230, 40, 40);">Rushi Dasvante</h1>
+        <p>I am a TYBSc Computer Science student with a deep passion for coding and technology.
+            My expertise spans various programming languages and tools,
+            including web development, Python, and C.
+            I am also proficient in MS-Office, which allows me to handle a wide range of tasks,
+            from documentation to data management. Additionally,
+            I have experience working on GitHub, where I collaborate on different types of projects,
+            applying my knowledge to create practical, real-world solutions.
+            My goal is to continually expand my skill set and contribute to innovative projects in the field of software
+            development.
         </p>
     </section>
 
-    <section id="project">
-        <h2 align="center"> My Project</h2>
-        <div class="project-grid">
-            <!-- Repeat for each project -->
-            <div class="project-item">
-                <img src="project1.jpg" align="center"Project 1">
-                
-                <img src="project2.jpg"align="center" alt="Project 1" >
-                <img src="project3.jpg"align="center" alt="Project 1" >
-                <h3 align="center" >Handwave Audio Controller</h3>
-                <p>
-                    The HandWave Audio Controller is a Python-based application that leverages computer vision to allow users to control the audio volume of their system using hand gestures. By using a webcam, the application detects specific hand gestures in real-time and translates them into commands to adjust the system's audio volume. This project utilizes Mediapipe for hand tracking and Pycaw (Python Core Audio Windows Library) to control the audio volume on Windows systems.
-                    
-                    <br>
-                    Use Cases:
-                    <br>
-                    1.Accessibility:
-                    <br>
-                    This application can be highly useful for individuals with mobility impairments who might find traditional input devices like keyboards or mice challenging to use.
-                    
-                    
-                    <br>
-                    2.Contactless Control:
-                    <br>
-                    In environments where hygiene is a concern (e.g., in medical settings or public kiosks), this contactless method of controlling audio can be advantageous.
-                    <br>
-                    3.Entertainment Systems:
-                    <br>
-                    The project can be integrated into home entertainment systems, allowing users to control the volume of their media playback without needing a remote or physical interaction.
-                    <br>
-                    4.Smart Home Integration:
-                    <br>
-                    The gesture-based control could be expanded to manage other smart home devices, providing a seamless and intuitive user experience.
-                    <br>
-                    5.Public Spaces:
-                    <br>
-                    In public spaces like museums, galleries, or exhibitions, where interactive displays might require audio control, this technology could be employed to allow users to adjust the volume in a contactless and intuitive manner</p>
-                <a href="https://github.com/RushiDasvante/HandWave_Audio_Controller.git">View Project on Github</a>
-            </div>
-        </div>
-    </section>
+
 
     <section id="education">
         <h2>Education</h2>
-        <p>Currently studying TYBSc Computer Science at Modern  College.</p>
+        <ul class="aducation-list">
+            <li>SCC Examination: Passed with 88.80% </li><br>
+            <li>HSC Examination: Passed with 63.67%</li><br>
+            <li>FYBSc Computer Science: 7.5 CGPA</li><br>
+            <li>SYBSc Computer Science: 8.1 CGPA</li><br>
+            <li>Currently studying TYBSc Computer Science at Modern College</li>
+        </ul>
+         
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 >Skills</h2>
         <ul class="skills-list">
             <li>HTML, CSS, JavaScript</li>
             <li>Python</li>
@@ -87,24 +78,108 @@
             <!-- Add more skills -->
         </ul>
     </section>
+    <section id="project"></section>
+    <h2 align="center"> My Project</h2>
+    <div class="project-grid">
+        <!-- Repeat for each project -->
+        <div class="project-item">
+            <div class="project-container">
+                <img src="project1.jpg" alt="Project 1" class="project-image">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <img src="project3.jpg" alt="Project 3" class="project-image">
+            </div>
+
+
+            <h3 align="center">Handwave Audio Controller</h3>
+            <p align="center">
+                The HandWave Audio Controller is a Python-based application that leverages <br>
+                computer vision to allow users to control the audio volume of their system <br>
+                using hand gestures. By using a webcam, the application detects specific hand <br>
+                gestures in real-time and translates them into commands to adjust the system's <br>
+                audio volume. This project utilizes Mediapipe for hand tracking and Pycaw <br>
+                (Python Core Audio Windows Library) to control the audio volume on Windows <br>
+
+                <br>
+                Use Cases:
+                <br>
+                1.Accessibility:
+                <br>
+                This application can be highly useful for individuals with mobility impairments <br>
+                who might find traditional input devices like keyboards or mice challenging to use.
+
+
+                <br>
+                <br>
+                2.Contactless Control:
+                <br>
+                In environments where hygiene is a concern (e.g., in medical settings or public kiosks) <br>
+                this contactless method of controlling audio can be advantageous.
+                <br>
+                <br>
+                3.Entertainment Systems:
+                <br>
+                The project can be integrated into home entertainment systems, allowing users to control the <br>
+                volume of their media playback without needing a remote or physical interaction.
+                <br>
+                <br>
+                4.Smart Home Integration:
+                <br>
+                The gesture-based control could be expanded to manage other smart home devices, providing a <br>
+                seamless and intuitive user experience.
+                <br>
+                <br>
+                5.Public Spaces:
+                <br>
+                In public spaces like museums, galleries, or exhibitions, where interactive displays might <br>
+                require audio control, this technology could be employed to allow users to adjust the volume <br>
+                in a contactless and intuitive manner
+            <div class="project-link">
+                <a href="https://github.com/RushiDasvante/HandWave_Audio_Controller.git" target="_blank">
+                    View Project on GitHub
+                </a>
+            </div>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+    </section>
 
     <section id="contact">
+        <h2>Other Social Acconts</h2>
+        <div class="other-account">
+            
+            <a href="https://www.linkedin.com/in/rushidasvante/" target="_blank">Linkden Account</a>
+            
+            <a href="https://github.com/RushiDasvante" target="_blank">Github Account</a>
+        </div>
+        <br>
+
         <h2>Contact Me</h2>
         <form id="contactForm">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
+            <br>
+            <br>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
 
+            <textarea id="message" placeholder="type Message......." required></textarea>
+            <br><br>
             <button type="submit">Send Message</button>
         </form>
-        <p id="formMessage"></p>
+
+        <p>Thank you for visiting 🙏</p>
+        <p id="form-status"></p>
     </section>
 
     <script src="script.js"></script>
+
 </body>
+
+
 </html>
