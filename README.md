@@ -3,5 +3,5 @@
 </h1>
 You can visit on :
 
-<a https://rushidasvante.netlify.app target=blank_>
+<a https://rushidasvante.netlify.app >
 
